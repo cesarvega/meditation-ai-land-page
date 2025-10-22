@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: meditation-ai-land-page
+    env: node
+    branch: main
+    plan: free
+    buildCommand: "npm ci && npm run build"
+    startCommand: "node dist/meditation-ai-land-page/server/server.mjs"
+    envVars:
+      - key: NODE_ENV
+        value: production
