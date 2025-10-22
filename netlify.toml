@@ -1,6 +1,6 @@
 [build]
   command = "npm ci && npm run build"
-  publish = "dist/meditation-ai-land-page"
+  publish = "dist/meditation-ai-land-page/browser"
 
 [build.environment]
   NODE_ENV = "production"
