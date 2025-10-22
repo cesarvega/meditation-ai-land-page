@@ -44,3 +44,6 @@ Thumbs.db
 
 # Ignore large local assets that shouldn't be pushed
 src/app/assets.zip
+
+# Netlify and static output
+dist/

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://meditation-ai-land-page.onrender.com/sitemap.xml
