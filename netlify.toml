@@ -5,6 +5,15 @@
 [build.environment]
   NODE_ENV = "production"
 
+# Netlify build plugins
+# The Angular runtime plugin enables server-side rendering (SSR) support for Angular applications. Explicitly declare it here to ensure that the correct version from our package.json is used during the build instead of any UI-installed version.
+[[plugins]]
+  package = "@netlify/angular-runtime"
+
+# The Lighthouse plugin runs performance and best‑practice audits on the built site after deployment. Declared here so that it is managed via version control.
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
